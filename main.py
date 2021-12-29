@@ -40,8 +40,8 @@ def run_crony():
     elif 'time' in command:
         time = datetime.datetime.now().strftime('%I:%M %p')
         talk('Current time is ' + time:   
-    elif ‘who is’ in command:
-        person=command.replace(‘who is’, ‘’)
+    elif 'who isâ€™ in command:
+        person=command.replace('who isâ€™, â€˜â€™)
         info.wikipedia.summary(person, 2)
         print(info)
         talk(info)
